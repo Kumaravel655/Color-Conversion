@@ -25,11 +25,11 @@ Split and merge the image using cv2.split and cv2.merge commands.
 End the program and close the output image windows.
 
 ## Program:
-```python
+
 # Developed By: KUMARAVEL V
 # Register Number: 212220230027
 # i) Convert BGR and RGB to HSV and GRAY
-
+```python
 import cv2
 color_image = cv2.imread('ee.jpg')
 cv2.imshow('Original image',color_image)
@@ -39,13 +39,13 @@ gray_image1 = cv2.cvtColor (color_image, cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY', gray_image1)
 cv2.waitKey(0)
 cv2. destroyAllWindows()
-
+```
 
 
 # ii)Convert HSV to RGB and BGR
 
 
-
+```python
 import cv2
 color_image = cv2.imread('ee.jpg')
 cv2.imshow('Original image', color_image)
@@ -56,9 +56,10 @@ cv2.imshow('HSV2BGR', gray_image1)
 cv2.waitKey(0)
 cv2. destroyAllWindows()
 
-
+```
 # iii)Convert RGB and BGR to YCrCb
 
+```python
 import cv2
 color_image = cv2.imread('ee.jpg')
 cv2.imshow('Original image',color_image)
@@ -69,9 +70,9 @@ cv2.imshow('BGR2YCrCb', gray_image1)
 cv2.waitKey(0)
 cv2. destroyAllWindows()
 
-
+```
 # iv)Split and Merge RGB Image
-
+```python
 import cv2
 image = cv2.imread('ee.jpg')
 blue=image[:,:,0]
@@ -85,8 +86,9 @@ cv2.imshow('Merged BGR Image',Merged_BGR)
 cv2.waitKey(0)
 cv2.destoryAllWindows()
 
-
+```
 # v) Split and merge HSV Image
+```python
 import cv2
 image = cv2.imread('ee.jpg')
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
